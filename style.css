@@ -1,0 +1,29 @@
+body{
+	background-image: url(https://i.ytimg.com/vi/5-LyRjHlRgQ/maxresdefault.jpg);
+	background-size: cover;
+}
+h1{
+	color: black;
+	text-align: center;
+	border: 5px solid rgb(255, 170, 170) ;
+	cursor: progress;
+
+}
+p{
+	color: black;
+
+}
+p{
+	color: #6F256F;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+p{
+
+text-decoration: underline;
+text-decoration: line-through;
+
+
+}
