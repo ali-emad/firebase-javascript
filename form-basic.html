@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+	<title>Basic Form</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+    <link rel="stylesheet" href="assets/form-basic.css">
+    <link rel="stylesheet" href="assets/form-search.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ -->
+
+</head>
+
+<body>
+    
+    <header>
+        <a href="http://www.itdevs.co/">Author</a>
+        <h1 style="float: left">Firebase Sample</h1>
+    </header>
+
+    <div class="main-content">
+            <!-- You only need this form and the form-basic.css -->
+            <form class="form-basic" method="post" action="#" autocomplete="on">
+               
+                <div>
+
+                    <div class="form-title-row">
+                        <h1>Information</h1>
+                        <!-- <button class="button  fa fa-print" type="button" onclick="print()" style="font-size:24px"></button> -->
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>First Name</span>
+                            <input type="text" id="fname" >
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Last Name</span>
+                            <input type="text" id="lname" name="name">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Child</span>
+                            <select name="dropdown" id="child">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Adress</span>
+                            <textarea name="textarea" id="adress"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Have Pet</span>
+                            <input type="checkbox" name="checkbox" checked id="pet">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label><span>Gender</span></label>
+                        <div class="form-radio-buttons">
+
+                            <div>
+                                <label>
+                                    <input type="radio" id="mail" name="radio" value="mail" checked>
+                                    <span>Mail</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label>
+                                    <input type="radio" id="fmail" name="radio" value="fmail">
+                                    <span>Femail</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>        
+
+                <div class="form-row">
+                    <label>   
+                        <br>
+                        <br>             
+                        <button class="button" type="button" onclick="save()" style="float: left;">Save</button>
+                        <button class="button" type="button" onclick="cancel()" >Cancel</button>
+                        <button class="button" type="button" onclick="prn()">PDF EXPORT</button>
+                        <!-- <button type="button" class="btn btn-default btn-sm" onclick="prn()" >
+                                <i class="fas fa-print" style="font-size:18px;color:whitesmoke;">print</i>
+                        </button> -->
+                    </label>
+                </div>
+
+            </form>
+
+    </div>
+    
+    <div class="main-content">
+
+        <!-- You only need this form and the form-search.css -->
+
+        <form class="form-search" method="get" action="https://www.google.com/search">
+            <input type="search" name="q" placeholder="I am looking for..">
+            <button type="submit">Search</button>
+            <i class="fa fa-search"></i>
+        </form>
+
+    </div>
+
+    <table id="content" style="">
+
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script type="text/javascript" src="assets/form-basic.js"></script>
+    <script src="assets/jspdf.js"></script>
+    <script src="assets/jquery-2.1.3.js"></script>
+
+</body>
+
+</html>
